@@ -1,0 +1,36 @@
+--- Sign up ---
+	- Sign up with facebook
+		- allow friends, events
+	- request location
+	- Pulls all events
+	- Sees map of all their events
+
+--- Create an Event ---
+	- Click new event
+	- Enter info
+		- Name, date, location, description, etc
+		- Add friends
+			- List of user's chats
+		- Privacy setting
+	- Finalize
+
+	- Event record is created
+		- Group chat for the event is created
+	- Users get invited
+		- Selected group chats get invite message
+		- Invited Users records get new event pushed to their events
+
+--- Start Impromptu Event ---
+	- Enter what you're doing
+	- Add friends
+
+
+
+--- Search for Events ---
+	- User clicks filter button
+	- Popup appears (tabbed filtering pages)
+		- Groups
+		- 
+	- Add filters
+		- date/time window
+	-

@@ -1,0 +1,42 @@
+User : {
+	name, profile, etc
+	events : {
+		<event-id> : {
+			attendance : <going/interested/invited/nexttime>
+		}
+	},
+	chats : {
+		<chat-id> : {
+			notification-settings : <silent/nearby>
+		}
+	},
+	activities : {
+		<activity-id> : true
+	}
+}
+
+Event : {
+	name, type, date,
+	chats : {
+		all : <chat-id>
+		attending : <chat-id>
+	}
+}
+
+Chats : {
+	name, type, etc
+	allow-messages : <true/false>
+	members : {
+		<user-ids>
+	}
+}
+
+Activity : {
+	user, type, name, date, etc
+	privacy : {
+		type : <friends/specific-chats>,
+		chats : {
+			<chat-id> : true
+		}
+	}
+}

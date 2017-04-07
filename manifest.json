@@ -1,0 +1,11 @@
+{
+  "name": "Impromptu",
+  "short_name": "Impromptu",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "/assets/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

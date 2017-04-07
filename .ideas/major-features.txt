@@ -1,0 +1,9 @@
+--- Major Features to be implemented later ---
+
+Activity Feed
+- Activities (various actions / updates on the platform) get published to friends
+
+Memories
+
+
+Venues can pay to have public events

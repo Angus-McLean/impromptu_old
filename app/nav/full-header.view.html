@@ -1,0 +1,9 @@
+<md-toolbar>
+	<div class="md-toolbar-tools">
+		<md-button class="md-icon-button" aria-label="Side Panel" ng-click="toggleLeft()">
+			<md-icon class="md-default-theme" class="material-icons">&#xE5D2;</md-icon>
+		</md-button>
+		<ui-view name="headerBar"></ui-view>
+	</div>
+</md-toolbar>
+<div ng-include="'/app/nav/sidenav.view.html'"></div>

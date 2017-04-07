@@ -1,0 +1,30 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+	<md-toolbar class="md-theme-indigo">
+		<h1 class="md-toolbar-tools">Impromptu</h1>
+	</md-toolbar>
+	<md-content layout-margin>
+		<md-list>
+			<md-list-item ng-click='uiNavigate("search")'>
+				<md-icon class="md-default-theme" class="material-icons">record_voice_over</md-icon>
+				<p>Be Impromptu</p>
+			</md-list-item>
+			<md-divider></md-divider>
+			<md-list-item ng-click='uiNavigate("newsfeed")'>
+				<md-icon class="md-default-theme" class="material-icons">event_available</md-icon>
+				<p>NewsFeed</p>
+			</md-list-item>
+			<md-list-item ng-click='uiNavigate("chats")'>
+				<md-icon class="md-default-theme" class="material-icons">chat_bubble</md-icon>
+				<p>Chats</p>
+			</md-list-item>
+			<!-- <md-list-item ng-click='uiNavigate("memories")'>
+				<md-icon class="md-default-theme" class="material-icons">photo_camera</md-icon>
+				<p>Memories</p>
+			</md-list-item> -->
+			<md-list-item ng-click='uiNavigate("settings")'>
+				<md-icon class="md-default-theme" class="material-icons">settings</md-icon>
+				<p>Settings</p>
+			</md-list-item>
+		</md-list>
+	</md-content>
+</md-sidenav>

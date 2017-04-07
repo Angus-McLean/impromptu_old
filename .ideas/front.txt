@@ -1,0 +1,43 @@
+Impromptu.social
+
+"Actually be social"
+Where being social isn't counting likes
+
+Pitch :
+	- Often have a couple hours to kill and want to see what's up and who's around. Shows you all events and friends in the area
+	- Are you hanging out in a park with people? Let other friends know!
+	- Want to make something happen? Make a proposed event and ping your friends
+
+Features :
+	- Super easy to make an event (name, time, place, invite/friends/friends of friends)
+
+	- Sharing Events Internally
+		- Send invites to groups
+		- Send invites to all friends
+
+	- Sharing Events Externally :
+		- Invite friends with invite links
+		- Needs to be easy to export events (to share with friends)
+
+	- Proposed Events : (Unscheduled)
+		- Propose events by making events without a time, and have a doodle
+
+	- Memories :
+		- Pictures all get shared on the event between people, users have a gallery of all photos they've been involved in
+
+	- Groups :
+		- Create groups with friends
+
+	- Chats :
+		- Event-wide chat
+		- Group chats
+
+	- Impromptu Mode :
+		- Users can set themselves as currently doing something
+
+	- Scroll though time
+	- Sidebar : map vs list view, categories (invited, going, interested, next time!, friend's events, public events), keywords, search friends
+	- Can be in multiple moods at once, or get rid of moods, can be in a mood for a certain amount of time
+	- Easily make + name group messages, have a friends tab and can quickly add people to a group chat
+	- We're upfront. You have total visibility and control over all your data all the time. Because your data is yours and yours alone.
+	- Notification settings : let me know when my good friends are in the same mood as me,
