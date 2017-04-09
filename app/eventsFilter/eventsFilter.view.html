@@ -1,0 +1,44 @@
+<md-dialog aria-label="Filter Events" style="width:90%; height:90%;">
+  <form flex>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Advanced Filters</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content flex>
+      <md-tabs style="height: 100% !important; min-height: 100%;">
+      <!-- <md-tabs> -->
+        <md-tab label="General">
+          <md-content class="md-padding">
+            <ul>
+              <li>Search</li>
+              <li>Tags</li>
+              <li>Distance</li>
+              <li>Attendance (attending/invited/)</li>
+            </ul>
+          </md-content>
+        </md-tab>
+        <md-tab label="Friends">
+          <md-content>
+            <div ng-include="'/app/eventsFilter/friendslist.view.html'"></div>
+
+          </md-content>
+        </md-tab>
+        <md-tab label="Time">
+          <md-content class="md-padding">
+            <ul>
+              <li>Time period</li>
+              <li></li>
+            </ul>
+
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-dialog-content>
+
+  </form>
+</md-dialog>

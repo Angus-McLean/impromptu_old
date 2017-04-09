@@ -11,3 +11,10 @@
 .text-grey {
   color: grey !important;
 }
+
+.ellipsis-overflow {
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

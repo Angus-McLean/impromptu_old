@@ -1,0 +1,65 @@
+<div layout="column" flex layout-fill ng-cloak>
+  <md-toolbar>
+    <md-input-container class="md-icon-float" style="margin:10px 0px -20px 15px;">
+      <label>Search</label>
+      <md-icon class="search" style="color:rgba(255,255,255,0.87);">search</md-icon>
+      <input ng-model="user.title">
+    </md-input-container>
+  </md-toolbar>
+
+  <md-content md-theme="altTheme" md-padding>
+
+    <section>
+      <md-subheader class="md-primary">Groups</md-subheader>
+      <md-list layout-padding>
+        <md-list-item class="md-1-line" ng-repeat="message in groups">
+            <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+            <div flex class="md-list-item-text ellipsis-overflow">
+              <h3 style="margin-bottom:2px;">{{message.name}}</h3>
+              <p style="margin-top:2px;">{{message.members.join(',')}}</p>
+              <!-- <h4 class="md-subhead">{{message.members.join(',')}}</h4> -->
+            </div>
+            <md-button flex="10" class="md-icon-button" aria-label="Add" ng-click="message.isSelected = !message.isSelected">
+              <md-icon ng-class="{'md-warn':message.isSelected}">star</md-icon>
+            </md-button>
+        </md-list-item>
+      </md-list>
+    </section>
+
+    <section>
+      <md-subheader class="md-warn">
+        Recent Events
+      </md-subheader>
+      <md-list layout="column" layout-padding>
+        <md-list-item class="md-1-line" ng-repeat="message in events">
+          <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+          <div flex class="md-list-item-text ellipsis-overflow">
+            <h3 style="margin-bottom:2px;">{{message.name}}</h3>
+            <p style="margin-top:2px;">{{message.members.join(',')}}</p>
+            <!-- <h4 class="md-subhead">{{message.members.join(',')}}</h4> -->
+          </div>
+          <md-button flex="10" class="md-icon-button" aria-label="Add" ng-click="message.isSelected = !message.isSelected">
+            <md-icon ng-class="{'md-warn':message.isSelected}">star</md-icon>
+          </md-button>
+
+        </md-list-item>
+      </md-list>
+    </section>
+
+    <section>
+      <md-subheader>Friends</md-subheader>
+      <md-list layout="column" layout-padding>
+        <md-list-item class="md-1-line" ng-repeat="message in friends">
+          <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+          <div flex class="md-list-item-text ellipsis-overflow">
+            <h3>{{message.name}}</h3>
+          </div>
+          <md-button flex="10" class="md-icon-button" aria-label="Add" ng-click="message.isSelected = !message.isSelected">
+            <md-icon ng-class="{'md-warn':message.isSelected}">star</md-icon>
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </section>
+
+  </md-content>
+</div>
