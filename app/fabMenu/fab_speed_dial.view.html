@@ -2,8 +2,8 @@
 <div id="fab-trigger" layout="column" ng-controller="fabMenuCtrl as vm" ng-cloak>
   <!-- <md-content class="md-padding" layout="column"> -->
   <div class="lock-size" layout="row" layout-align="center center" ng-cloak>
-      <md-fab-speed-dial md-open="vm.isOpen" md-direction="up" class="md-fling">
-        <md-fab-trigger ng-click="vm.openTooltips()">
+      <md-fab-speed-dial md-open="isOpen" md-direction="up" class="md-fling">
+        <md-fab-trigger>
           <md-button aria-label="menu" class="md-fab md-warn">
             <md-icon md-svg-src="/assets/img/logo.svg"></md-icon>
           </md-button>
@@ -11,19 +11,19 @@
 
         <md-fab-actions>
           <md-button aria-label="Search" class="md-fab md-raised md-mini">
-            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible" md-autohide="false">
               Search
             </md-tooltip>
             <md-icon aria-label="Search">search</md-icon>
           </md-button>
-          <md-button aria-label="Filter" class="md-fab md-raised md-mini">
-            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+          <md-button aria-label="Filter" class="md-fab md-raised md-mini" ng-click="openFilters($event)">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible" md-autohide="false">
               Filter
             </md-tooltip>
             <md-icon aria-label="Filter">filter_list</md-icon>
           </md-button>
           <md-button aria-label="Create" class="md-fab md-raised md-mini">
-            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible" md-autohide="false">
               Create
             </md-tooltip>
             <md-icon aria-label="Create">add</md-icon>

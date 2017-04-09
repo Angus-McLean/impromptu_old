@@ -2,24 +2,34 @@
   angular.module('app')
     .controller('fabMenuCtrl', fabMenuCtrl);
 
-  fabMenuCtrl.inject = ['$scope', '$timeout'];
+  fabMenuCtrl.inject = ['$scope', '$timeout', '$mdDialog'];
 
-  function fabMenuCtrl($scope, $timeout) {
+  function fabMenuCtrl($scope, $timeout, $mdDialog) {
     console.log('fabMenuCtrl');
 
-    var self = this;
-    self.isOpen = false;
-    self.openTooltips = function () {
-      if(!self.isOpen) {
+    $scope.tooltipVisible = false;
+    $scope.isOpen = false;
+    $scope.$watch('isOpen', function (newVal) {
+      if(newVal) {
         $timeout(function () {
-          self.tooltipVisible = true;
+          $scope.tooltipVisible = true;
         }, 500);
         $timeout(function () {
-          self.tooltipVisible = false;
+          $scope.tooltipVisible = false;
         }, 3000);
       } else {
-        self.tooltipVisible = false;
+        $scope.tooltipVisible = false;
       }
+    });
+
+    $scope.openFilters = function (ev) {
+      $mdDialog.show({
+        controller: 'eventsFilterCtrl',
+        templateUrl: '/app/eventsFilter/eventsFilter.view.html',
+        parent: angular.element(document.body),
+        targetEvent: ev,
+        clickOutsideToClose:true
+      });
     };
   }
 })();
