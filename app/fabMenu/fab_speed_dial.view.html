@@ -1,0 +1,59 @@
+<!-- <div id="fab-trigger" layout="column" ng-controller="fabMenuCtrl as vm" class="md-fab-bottom-right" ng-cloak> -->
+<div id="fab-trigger" layout="column" ng-controller="fabMenuCtrl as vm" ng-cloak>
+  <!-- <md-content class="md-padding" layout="column"> -->
+  <div class="lock-size" layout="row" layout-align="center center" ng-cloak>
+      <md-fab-speed-dial md-open="vm.isOpen" md-direction="up" class="md-fling">
+        <md-fab-trigger ng-click="vm.openTooltips()">
+          <md-button aria-label="menu" class="md-fab md-warn">
+            <md-icon md-svg-src="/assets/img/logo.svg"></md-icon>
+          </md-button>
+        </md-fab-trigger>
+
+        <md-fab-actions>
+          <md-button aria-label="Search" class="md-fab md-raised md-mini">
+            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+              Search
+            </md-tooltip>
+            <md-icon aria-label="Search">search</md-icon>
+          </md-button>
+          <md-button aria-label="Filter" class="md-fab md-raised md-mini">
+            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+              Filter
+            </md-tooltip>
+            <md-icon aria-label="Filter">filter_list</md-icon>
+          </md-button>
+          <md-button aria-label="Create" class="md-fab md-raised md-mini">
+            <md-tooltip md-direction="left" md-visible="vm.tooltipVisible" md-autohide="false">
+              Create
+            </md-tooltip>
+            <md-icon aria-label="Create">add</md-icon>
+          </md-button>
+        </md-fab-actions>
+      </md-fab-speed-dial>
+  </div>
+<!-- </md-content> -->
+</div>
+
+<!-- <div ng-controller="fabMenuCtrl as demo" layout="column" ng-cloak>
+  <md-content class="md-padding" layout="column">
+  <div class="lock-size" layout="row" layout-align="center center" ng-cloak>
+  <md-fab-speed-dial md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}" ng-class="demo.selectedMode">
+  <md-fab-trigger>
+    <md-button aria-label="menu" class="md-fab md-warn">
+      <md-icon></md-icon>
+    </md-button>
+  </md-fab-trigger>
+
+  <md-fab-actions>
+    <md-button aria-label="Twitter" class="md-fab md-raised md-mini">
+      <md-icon aria-label="Twitter"></md-icon>
+    </md-button>
+    <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
+      <md-icon aria-label="Facebook"></md-icon>
+    </md-button>
+    <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
+      <md-icon aria-label="Google Hangout"></md-icon>
+    </md-button>
+  </md-fab-actions>
+</md-fab-speed-dial>
+</div> -->

@@ -1,10 +1,10 @@
 {
-  "name": "Impromptu",
+  "name": "Impromptu.Social",
   "short_name": "Impromptu",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "display": "standalone",
   "icons": [{
-    "src": "/assets/icon.png",
+    "src": "/assets/img/logo.png",
     "sizes": "512x512",
     "type": "image/png"
   }]

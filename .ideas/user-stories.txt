@@ -29,8 +29,11 @@
 --- Search for Events ---
 	- User clicks filter button
 	- Popup appears (tabbed filtering pages)
-		- Groups
-		- 
+		- General
+			- Keywords, distance, tags,
+		- Time
+			- date/time/duration filters
+		- Friends
 	- Add filters
 		- date/time window
 	-

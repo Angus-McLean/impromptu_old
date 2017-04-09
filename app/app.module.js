@@ -3,4 +3,4 @@
     'ui.router',
     'ngMaterial'
   ]);
-})()
+})();

@@ -1,3 +1,9 @@
+#fab-trigger {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+
 .transparent {
   background-color: transparent !important;
 }
